@@ -1,0 +1,352 @@
+/* ============================================
+   1. ОБЩИЕ НАСТРОЙКИ
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    line-height: 1.6;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 880px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    padding: 48px 56px;
+    transition: all 0.2s ease;
+}
+
+/* ============================================
+   2. ШАПКА — КОНТАКТЫ
+   ============================================ */
+.header {
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2563eb;
+    margin-bottom: 14px;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.contacts span {
+    display: inline-block;
+}
+
+/* ============================================
+   3. РАЗДЕЛЫ
+   ============================================ */
+.section {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+
+/* ============================================
+   4. РЕЗЮМЕ (SUMMARY)
+   ============================================ */
+.summary {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   5. НАВЫКИ (SKILLS)
+   ============================================ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 32px;
+}
+
+.skill-group {
+    margin-bottom: 4px;
+}
+
+.skill-category {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 2px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    padding-left: 16px;
+    position: relative;
+}
+
+.skill-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 13px;
+}
+
+/* ============================================
+   6. ПРОЕКТЫ (PROJECTS)
+   ============================================ */
+.project {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.project-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px 12px;
+    margin-bottom: 4px;
+}
+
+.project-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.project-stack {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 0 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 4px;
+}
+
+.project-details {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0 0;
+}
+
+.project-details li {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+}
+
+.project-details li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.project-details li strong {
+    color: #0f172a;
+}
+
+/* ============================================
+   7. ОБРАЗОВАНИЕ (EDUCATION)
+   ============================================ */
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.edu-item {
+    margin-bottom: 0;
+}
+
+.edu-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px 12px;
+    margin-bottom: 2px;
+}
+
+.edu-institution {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.edu-year {
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.edu-details p {
+    font-size: 14px;
+    color: #475569;
+    margin: 1px 0;
+}
+
+.edu-subjects {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+}
+
+.edu-subjects li {
+    font-size: 13px;
+    color: #475569;
+    padding-left: 16px;
+    position: relative;
+}
+
+.edu-subjects li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+}
+
+/* ============================================
+   8. ПОДВАЛ
+   ============================================ */
+.footer {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 16px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+/* ============================================
+   9. АДАПТИВНОСТЬ
+   ============================================ */
+@media (max-width: 640px) {
+    .container {
+        padding: 28px 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-stack {
+        white-space: normal;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .edu-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .edu-subjects {
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+/* ============================================
+   10. ПЕЧАТЬ / PDF
+   ============================================ */
+@media print {
+    body {
+        background: #ffffff;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 36px 40px;
+        max-width: 100%;
+    }
+
+    .project {
+        break-inside: avoid;
+    }
+
+    .section {
+        break-inside: avoid;
+    }
+}
